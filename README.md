@@ -85,21 +85,20 @@ Icons update depending on Open-Meteo weather code.
 
 This section provides a quick overview of the APIs used in this project.
 
-[Geocoding API](https://geocoding-api.open-meteo.com/v1/search?name=Berlin)
-
-**URL:** `https://geocoding-api.open-meteo.com/v1/search?name={city}`
-**Description:** Used to search for geographic coordinates by city name.
-**Parameters:**
-    `name`: The city name (required).
+[Geocoding API](https://geocoding-api.open-meteo.com/v1/search?name=Berlin)  
+**URL:** `https://geocoding-api.open-meteo.com/v1/search?name={city}`  
+**Description:** Used to search for geographic coordinates by city name.  
+**Parameters:**  
+**`name`**: The city name (required).
 
 [Forecast API](https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true&daily=temperature_2m_max,temperature_2m_min&timezone=auto)
 
-**URL:** `https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&...`
-**Description:** Used to retrieve a weather forecast for specific geographic coordinates.
-**Parameters:**
-    `latitude`: The latitude (required).
-    `longitude`: The longitude (required).
-    `...`: Other parameters to customize the forecast.
+**URL:** `https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&...`  
+**Description:** Used to retrieve a weather forecast for specific geographic coordinates.  
+**Parameters:**  
+**`latitude`**: The latitude (required).  
+**`longitude`**: The longitude (required).  
+**`...`**: Other parameters to customize the forecast.
 
 ---
 
@@ -127,21 +126,21 @@ Automated unit tests via **Mocha** + **Chai** (test.html):
 Run tests:
 Open **test.html** in browser → view console results.
 
-###### 🧩 Project Structure
-
-.
-├── public/
-│   ├── icons/            # Weather icons (day/night, mapped to codes)
-│   └── test-weather.js   # Mocha/Chai tests
-├── index.html            # Main UI
-├── style.css             # Styling
-├── script.js             # Weather logic
-├── test.html             # Test runner
-├── test.js               # Unit tests
-├── .gitignore
-└── README.
-
----
+###### 🧩 Project Structure  
+  
+  .  
+├── public/  
+│   ├── icons/            # Weather icons (day/night, mapped to codes)  
+│   └── test-weather.js   # Mocha/Chai tests  
+├── index.html            # Main UI  
+├── style.css             # Styling  
+├── script.js             # Weather logic  
+├── test.html             # Test runner  
+├── test.js               # Unit tests  
+├── .gitignore  
+└── README.  
+  
+  ---
 
 
 🧭 **Roadmap / Future Improvements**
