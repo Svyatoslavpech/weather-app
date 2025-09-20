@@ -37,14 +37,14 @@ Clone the repository:
     git clone `https://github.com/YOUR-USERNAME/weather-app.git`
   ```
 
-Open the app:
+Open the app in Windows:
 
   ```bash
     cd weather-app
   ```
 
   ```bash
-    open index.html
+    start index.html
   ```
 
 ⚠️ No API keys or build process required — runs directly in any modern browser.
@@ -53,15 +53,15 @@ Open the app:
 
 #### 📖 Usage Guide
 
-1. Open index.html.
-2. Enter a city name (e.g., New York, Paris, Tokyo).
-3. (Optional) Toggle Fahrenheit.
-4. Click Get Weather.
+1. Open **index.html**.
+2. Enter a **city name** (e.g., New York, Paris, Tokyo).
+3. (Optional) Toggle **Fahrenheit**.
+4. Click **Get Weather**.
 5. View the current weather and the 7 day forecast with icons.
 
 ```📊 Example Output
 
-Input: "Chicago", Fahrenheit ON
+Input: **"Chicago"**, **Fahrenheit ON**
 Output:
 
 Current Weather for Chicago, US
@@ -87,14 +87,14 @@ This section provides a quick overview of the APIs used in this project.
 
 Geocoding API
 
-**URL:** `https://geocoding-api.open-meteo.com/v1/search?name={city}`
+**URL:** <https://geocoding-api.open-meteo.com/v1/search?name={city}>
 **Description:** Used to search for geographic coordinates by city name.
 **Parameters:**
     *`name`*: The city name (required).
 
  Forecast API
 
-**URL:** `https://api.open-meteo.com/v1/forecast?latitude=%7Blat%7D&longitude=%7Blon%7D&current_weather=true&daily=temperature_2m_max,temperature_2m_min&timezone=auto`
+**URL:** <https://api.open-meteo.com/v1/forecast?latitude=%7Blat%7D&longitude=%7Blon%7D&current_weather=true&daily=temperature_2m_max,temperature_2m_min&timezone=auto>
 **Description:** Used to retrieve a weather forecast for specific geographic coordinates.
 **Parameters:**
     *`latitude`*: The latitude (required).
@@ -112,24 +112,22 @@ Geocoding API
 
 Automated unit tests via Mocha + Chai (test.html):
 
-✅ Empty input validation
+✅ **Empty input validation**
 
-✅ Invalid city handling
+✅ **Invalid city handling**
 
-✅ City encoding (São Paulo)
+✅ **City encoding (São Paulo)**
 
-✅ Case-insensitive search
+✅ **Case-insensitive search**
 
-✅ DOM rendering check
+✅ **DOM rendering check**
 
-✅ Weather icon mapping (getIcon())
+✅ **Weather icon mapping (getIcon())**
 
 Run tests:
 Open test.html in browser → view console results.
 
----
-
-####### 🧩 Project Structure
+🧩 Project Structure
 
 .
 ├── public/
@@ -143,28 +141,28 @@ Open test.html in browser → view console results.
 ├── .gitignore
 └── README.md
 
-🧭 Roadmap / Future Improvements
+🧭 **Roadmap / Future Improvements**
 
-📍 Auto-detect location via Geolocation API
+📍 **Auto-detect location via Geolocation API**
 
-🌍 Multi-language support
+🌍 **Multi-language support**
 
-📊 Weather trends & historical charts
+📊 **Weather trends & historical charts**
 
-🌓 Dark mode toggle
+🌓 **Dark mode toggle**
 
-💾 Cache last searched city
+💾 **Cache last searched city**
 
-⚙️ Modular JS structure (ES Modules)
+⚙️ **Modular JS structure (ES Modules)**
 
-🙌 Contributing
+🙌 **Contributing**
 
 Pull requests are welcome!
 For significant changes, open an issue first to discuss the proposal.
 
-📜 License
+📜 **License**
 
 Distributed under the **MIT License**
-`https://choosealicense.com/licenses/mit/`
+<https://choosealicense.com/licenses/mit/>
 
 ---
