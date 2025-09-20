@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App Tests</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/10.2.0/mocha.min.css">
+</head>
+<body>
+  <script src="../script.js"></script>
+<script src="tests/test-weather.js"></script>
+
+  <div id="mocha"></div>
+
+  <!-- ✅ Load UMD-compatible versions of Mocha and Chai -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/10.2.0/mocha.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.7/chai.min.js"></script>
+
+  <script>
+    mocha.setup('bdd');
+    window.assert = chai.assert;
+
+    window.addEventListener('DOMContentLoaded', function () {
+      const appScript = document.createElement('script');
+      appScript.src = 'main.js'; // Your app logic
+      document.body.appendChild(appScript);
+
+      const testScript = document.createElement('script');
+      testScript.src = 'tests/test-weather.js'; // Your test file
+      document.body.appendChild(testScript);
+
+      testScript.onload = function () {
+        mocha.run();
+      };
+    });
+  </script>
+</body>
+</html>
+
