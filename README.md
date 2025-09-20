@@ -85,21 +85,21 @@ Icons update depending on Open-Meteo weather code.
 
 This section provides a quick overview of the APIs used in this project.
 
-Geocoding API
+[Geocoding API](https://geocoding-api.open-meteo.com/v1/search?name=Berlin)
 
-**URL:** <https://geocoding-api.open-meteo.com/v1/search?name={city}>
+**URL:** `https://geocoding-api.open-meteo.com/v1/search?name={city}`
 **Description:** Used to search for geographic coordinates by city name.
 **Parameters:**
-    *`name`*: The city name (required).
+    `name`: The city name (required).
 
- Forecast API
+[Forecast API](https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true&daily=temperature_2m_max,temperature_2m_min&timezone=auto)
 
-**URL:** <https://api.open-meteo.com/v1/forecast?latitude=%7Blat%7D&longitude=%7Blon%7D&current_weather=true&daily=temperature_2m_max,temperature_2m_min&timezone=auto>
+**URL:** `https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&...`
 **Description:** Used to retrieve a weather forecast for specific geographic coordinates.
 **Parameters:**
-    *`latitude`*: The latitude (required).
-    *`longitude`*: The longitude (required).
-    *`...`*: Other parameters to customize the forecast.
+    `latitude`: The latitude (required).
+    `longitude`: The longitude (required).
+    `...`: Other parameters to customize the forecast.
 
 ---
 
@@ -110,7 +110,7 @@ Geocoding API
 
 🧪 Testing
 
-Automated unit tests via Mocha + Chai (test.html):
+Automated unit tests via **Mocha** + **Chai** (test.html):
 
 ✅ **Empty input validation**
 
@@ -125,9 +125,9 @@ Automated unit tests via Mocha + Chai (test.html):
 ✅ **Weather icon mapping (getIcon())**
 
 Run tests:
-Open test.html in browser → view console results.
+Open **test.html** in browser → view console results.
 
-🧩 Project Structure
+###### 🧩 Project Structure
 
 .
 ├── public/
@@ -139,7 +139,10 @@ Open test.html in browser → view console results.
 ├── test.html             # Test runner
 ├── test.js               # Unit tests
 ├── .gitignore
-└── README.md
+└── README.
+
+---
+
 
 🧭 **Roadmap / Future Improvements**
 
