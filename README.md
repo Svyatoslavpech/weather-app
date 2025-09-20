@@ -38,10 +38,14 @@ Clone the repository:
   ```
 
 Open the app:
-    ```bash
+
+  ```bash
     cd weather-app
+  ```
+
+  ```bash
     open index.html
-    ```
+  ```
 
 ⚠️ No API keys or build process required — runs directly in any modern browser.
 
@@ -71,9 +75,7 @@ Wind Speed: 10 km/h
 
 ```
 
-```(Sample icons such as ☀️, 🌧️, ❄️ are displayed depending on the weather code.)
-
----
+(Sample icons such as ☀️, 🌧️, ❄️ are displayed depending on the weather code.)
 
 Icons update depending on Open-Meteo weather code.
 
